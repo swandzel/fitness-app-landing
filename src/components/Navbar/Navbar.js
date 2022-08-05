@@ -14,13 +14,13 @@ const Navbar = ({ toggleModal }) => {
       className="navbar"
     >
       <div className="navbar--container">
-        <a href="#" className="navbar--logo">
+        <div className="navbar--logo">
           <img src={Logo} alt="Logo" />
           <span className="navbar--logo-bold">
             NE<span className="navbar--logo-blue">X</span>T
           </span>
           &nbsp;FITNESS APP
-        </a>
+        </div>
         <ul className="navbar--links">
           <li className="navbar--link">
             <a href="#learn-more">Learn more</a>
