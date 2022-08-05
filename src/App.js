@@ -8,11 +8,20 @@ import DownloadOurApp from "./components/DownloadOurApp/DownloadOurApp";
 import Blog from "./components/Blog/Blog";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Footer from "./components/Footer/Footer";
+import { useState } from "react";
 
 const App = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  console.log(showModal);
+
+  const toggleModal = () => {
+    setShowModal(!showModal);
+  };
+
   return (
     <div className="app">
-      <Navbar />
+      <Navbar toggleModal={toggleModal} />
       <Header />
       <ImprovingHealth />
       <VarietyWorkouts />

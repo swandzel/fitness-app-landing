@@ -7,7 +7,8 @@ import { h2Animation } from "../../utils/animations";
 
 const Testimonials = () => {
   return (
-    <div className="testimonials">
+    <div className="testimonials" id="testimonials">
+      <div className="block" />
       <motion.h2
         variants={h2Animation}
         initial="offscreen"

@@ -4,7 +4,7 @@ import Logo from "../../assets/icons/dumbbell.svg";
 import { motion } from "framer-motion";
 import { navAnim } from "../../utils/animations";
 
-const Navbar = () => {
+const Navbar = ({ toggleModal }) => {
   return (
     <motion.nav
       initial="initial"
@@ -14,20 +14,30 @@ const Navbar = () => {
       className="navbar"
     >
       <div className="navbar--container">
-        <div className="navbar--logo">
+        <a href="#" className="navbar--logo">
           <img src={Logo} alt="Logo" />
           <span className="navbar--logo-bold">
             NE<span className="navbar--logo-blue">X</span>T
           </span>
           &nbsp;FITNESS APP
-        </div>
+        </a>
         <ul className="navbar--links">
-          <li className="navbar--link">Learn more</li>
-          <li className="navbar--link navbar--link-active">Download</li>
-          <li className="navbar--link">Blog</li>
-          <li className="navbar--link">Testimonials</li>
-          <li className="navbar--link">Login</li>
-          <Button text="SIGNUP" type="small" />
+          <li className="navbar--link">
+            <a href="#learn-more">Learn more</a>
+          </li>
+          <li className="navbar--link">
+            <a href="#download">Download</a>
+          </li>
+          <li className="navbar--link">
+            <a href="#blog">Blog</a>
+          </li>
+          <li className="navbar--link">
+            <a href="#testimonials">Testimonials</a>
+          </li>
+          <li onClick={() => toggleModal()} className="navbar--link">
+            Login
+          </li>
+          <Button onClick={toggleModal} text="SIGNUP" type="small" />
         </ul>
       </div>
     </motion.nav>

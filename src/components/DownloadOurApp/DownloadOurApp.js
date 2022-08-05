@@ -7,7 +7,7 @@ import { picAnim } from "../../utils/animations";
 
 const DownloadOurApp = () => {
   return (
-    <div className="download-our-app">
+    <div className="download-our-app" id="download">
       <Container>
         <div className="download-our-app--content">
           <div className="download-our-app--image">

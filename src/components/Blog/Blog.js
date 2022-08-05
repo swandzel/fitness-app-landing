@@ -6,7 +6,8 @@ import { h2Animation } from "../../utils/animations";
 
 const Blog = () => {
   return (
-    <div className="blog">
+    <div className="blog" id="blog">
+      <div className="block" />
       <Container>
         <motion.h2
           variants={h2Animation}

@@ -12,7 +12,8 @@ import { h2Animation, cardContainer, cardItem } from "../../utils/animations";
 
 const ImprovingHealth = () => {
   return (
-    <div className="improving-health">
+    <div className="improving-health" id="learn-more">
+      <div className="block" />
       <Container>
         <motion.h2
           variants={h2Animation}
