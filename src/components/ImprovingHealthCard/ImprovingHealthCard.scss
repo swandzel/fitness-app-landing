@@ -1,0 +1,31 @@
+@import "../../base";
+
+.improving-health-card {
+  border-radius: 50px;
+  border: 0;
+  width: 505px;
+  height: 405px;
+  color: $white;
+
+  &--title {
+    font-size: 50px;
+    font-weight: 700;
+  }
+
+  &--subtitle {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  &--overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    background-color: $overlay;
+    border-radius: 50px;
+  }
+}

@@ -1,0 +1,64 @@
+@import "../../base";
+
+.footer {
+  height: 330px;
+  max-width: 1920px;
+  margin: 0 auto;
+  color: $white;
+  background: rgb(29, 49, 208);
+  background: linear-gradient(
+    229deg,
+    rgba(29, 49, 208, 1) 0%,
+    rgba(34, 155, 248, 1) 100%
+  );
+
+  .container {
+    height: 100%;
+  }
+
+  &--logo {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    margin-bottom: 65px;
+
+    img {
+      margin-right: 20px;
+    }
+
+    &-bold {
+      font-weight: 700;
+    }
+  }
+
+  h3 {
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+  }
+
+  &--content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  &--left,
+  &--right {
+    width: 50%;
+    font-size: 24px;
+  }
+
+  &--right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    li {
+      list-style: none;
+    }
+  }
+}

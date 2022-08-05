@@ -1,0 +1,32 @@
+@import "../../base";
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  width: 510px;
+  height: 770px;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 3px 76px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 3px 76px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 3px 76px 0px rgba(0, 0, 0, 0.16);
+
+  &--title {
+    font-size: 40px;
+    font-weight: 700;
+    padding: 23px 23px 10px 23px;
+  }
+
+  &--text {
+    font-size: 20px;
+    color: $grey;
+    padding: 0 23px;
+  }
+
+  &--read-more {
+    font-size: 24px;
+    color: $grey;
+    font-weight: 700;
+    text-align: right;
+    padding: 23px 46px 0 0;
+  }
+}

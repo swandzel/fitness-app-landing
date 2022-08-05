@@ -1,0 +1,43 @@
+@import "../../base";
+
+.header {
+  background: url("../../assets//images/header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 980px;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+
+  &--layer {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      131deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(246, 251, 255, 1) 50%,
+      rgba(34, 155, 248, 0) 100%
+    );
+  }
+
+  &--title {
+    font-size: 100px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    line-height: 88px;
+    margin-bottom: 16px;
+
+    &-blue {
+      color: $blue;
+    }
+  }
+
+  &--subtitle {
+    font-size: 50px;
+    font-weight: 300;
+    width: 70%;
+    margin-bottom: 32px;
+  }
+}

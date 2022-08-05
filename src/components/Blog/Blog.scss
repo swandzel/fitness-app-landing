@@ -1,0 +1,17 @@
+@import "../../base";
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 150px auto;
+
+  h2 {
+    margin-bottom: 50px;
+  }
+
+  &--posts {
+    display: flex;
+    justify-content: space-around;
+  }
+}

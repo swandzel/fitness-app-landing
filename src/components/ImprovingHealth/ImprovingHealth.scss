@@ -1,0 +1,19 @@
+.improving-health {
+  margin: 150px 0;
+
+  &--cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+
+    &--item {
+      margin-right: 65px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}

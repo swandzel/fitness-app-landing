@@ -1,0 +1,24 @@
+.button {
+  color: white;
+  border: 0px;
+  border-radius: 50px;
+  background: rgb(29, 49, 208);
+  background: linear-gradient(
+    229deg,
+    rgba(29, 49, 208, 1) 0%,
+    rgba(34, 155, 248, 1) 100%
+  );
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+
+  &--small {
+    height: 50px;
+    padding: 0 30px;
+  }
+
+  &--large {
+    font-size: 46px;
+    height: 100px;
+    padding: 0 80px;
+  }
+}

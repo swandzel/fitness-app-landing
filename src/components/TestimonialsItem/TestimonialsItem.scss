@@ -1,0 +1,39 @@
+@import "../../base";
+
+.testimonials-item {
+  display: flex;
+  flex-direction: column;
+  width: 720px;
+  height: 365px;
+  background-color: $white;
+  border-radius: 36px;
+  margin: 0 15px;
+  padding: 30px;
+  -webkit-box-shadow: 0px 3px 27px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 3px 27px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 3px 27px 0px rgba(0, 0, 0, 0.16);
+
+  &--text {
+    font-size: 32px;
+    color: $grey;
+    text-align: left;
+  }
+
+  &--stars {
+    display: flex;
+    width: 240px;
+    align-self: flex-end;
+    margin-bottom: 30px;
+  }
+
+  &--star {
+    height: 28px;
+  }
+
+  &--author {
+    text-align: right;
+    font-size: 24px;
+    color: $grey;
+    font-weight: 700;
+  }
+}
