@@ -6,6 +6,9 @@ const ImprovingHealthCard = ({ title, subtitle, icon, pic }) => {
       className="improving-health-card"
       style={{
         background: `url(${pic})`,
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        backgroundSize: "cover",
       }}
     >
       <div className="improving-health-card--overlay">
