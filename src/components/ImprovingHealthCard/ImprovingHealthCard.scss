@@ -3,13 +3,23 @@
 .improving-health-card {
   border-radius: 50px;
   border: 0;
-  width: 505px;
+  width: 500px;
   height: 405px;
   color: $white;
+  margin-bottom: 20px;
+
+  @media (max-width: 1640px) {
+    width: 335px;
+  }
 
   &--title {
     font-size: 50px;
     font-weight: 700;
+    text-align: center;
+
+    @media (max-width: 1640px) {
+      font-size: 36px;
+    }
   }
 
   &--subtitle {

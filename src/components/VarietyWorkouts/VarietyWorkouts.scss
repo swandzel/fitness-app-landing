@@ -5,10 +5,25 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  // width: 100%;
+  max-width: 1640px;
+  margin: auto;
+
+  @media (max-width: 1640px) {
+    margin: 0 50px;
+  }
+
+  @media (max-width: 500px) {
+    margin: 0 20px;
+  }
 
   &--dumbbell {
     width: 123px;
     height: 86px;
     margin-bottom: 25px;
+  }
+
+  p {
+    width: 100%;
   }
 }

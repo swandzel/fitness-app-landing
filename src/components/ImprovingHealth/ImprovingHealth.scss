@@ -1,12 +1,30 @@
 .improving-health {
   margin-bottom: 150px;
+  // width: 100%;
+  max-width: 1640px;
+  margin: auto;
+
+  @media (max-width: 1640px) {
+    margin: 0 50px;
+  }
+
+  @media (max-width: 500px) {
+    margin: 0 20px;
+  }
 
   &--cards {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     margin-top: 80px;
+    // width: 100%;
+    max-width: 1640px;
+
+    @media (max-width: 500px) {
+      margin: 80px 20px 0 20px;
+    }
 
     &--item {
       margin-right: 65px;
@@ -14,6 +32,14 @@
       &:last-of-type {
         margin-right: 0;
       }
+
+      @media (max-width: 500px) {
+        margin-right: 0;
+      }
     }
+  }
+
+  p {
+    width: 100%;
   }
 }

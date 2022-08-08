@@ -1,7 +1,7 @@
 @import "../../base";
 
 .footer {
-  height: 330px;
+  min-height: 330px;
   max-width: 1920px;
   margin: 0 auto;
   color: $white;
@@ -11,10 +11,6 @@
     rgba(29, 49, 208, 1) 0%,
     rgba(34, 155, 248, 1) 100%
   );
-
-  .container {
-    height: 100%;
-  }
 
   &--logo {
     display: flex;
@@ -42,8 +38,19 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    height: 100%;
+    align-items: flex-start;
+    // height: 100%;
+    padding-top: 50px;
+    max-width: 1640px;
+    margin: auto;
+
+    @media (max-width: 1640px) {
+      margin: 0 50px;
+    }
+
+    @media (max-width: 500px) {
+      flex-direction: column;
+    }
   }
 
   &--left,
@@ -56,6 +63,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+
+    @media (max-width: 1100px) {
+      flex-direction: column;
+    }
 
     li {
       list-style: none;

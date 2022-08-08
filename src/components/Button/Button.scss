@@ -20,5 +20,15 @@
     font-size: 46px;
     height: 100px;
     padding: 0 80px;
+
+    @media (max-width: 768px) {
+      font-size: 40px;
+    }
+
+    @media (max-width: 550px) {
+      font-size: 20px;
+      padding: 0;
+      width: 275px;
+    }
   }
 }

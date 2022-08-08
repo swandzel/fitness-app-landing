@@ -8,20 +8,27 @@
   background-color: $white;
   z-index: 10;
 
+  &--container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1640px;
+    margin: auto;
+    height: 100%;
+
+    @media (max-width: 1640px) {
+      margin: 0 50px;
+    }
+
+    @media (max-width: 500px) {
+      margin: 0 20px;
+    }
+  }
+
   a {
     text-decoration: none;
     color: $black;
-  }
-
-  &--container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    max-width: 1640px;
-    margin: 0 auto;
   }
 
   &--logo {
@@ -30,6 +37,13 @@
     font-size: 40px;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
+    cursor: pointer;
+
+    &--fitness-app {
+      @media (max-width: 1300px) {
+        display: none;
+      }
+    }
 
     img {
       margin-right: 20px;
@@ -46,13 +60,21 @@
 
   &--links {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
 
-    li {
-      margin-right: 60px;
+    &--container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      list-style: none;
+
+      @media (max-width: 1000px) {
+        display: none;
+      }
+
+      li {
+        margin-right: 60px;
+      }
     }
   }
 
