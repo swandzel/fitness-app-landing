@@ -14,7 +14,7 @@
   &--cards {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 80px;
@@ -25,6 +25,9 @@
     }
 
     &--item {
+      width: 32%;
+      min-width: 300px;
+
       @media (max-width: 1100px) {
         width: 100%;
         height: 405px;

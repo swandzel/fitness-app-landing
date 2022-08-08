@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="footer--logo">
             <img src={Logo} alt="Logo" />
             <span className="footer--logo-bold">NEXT</span>
-            &nbsp;FITNESS APP
+            <span className="footer--logo--fitness-app">&nbsp;FITNESS APP</span>
           </div>
           <div className="footer--left--copyright">
             Copyright © 2022 NEXT Fitness PTE. Ltd.

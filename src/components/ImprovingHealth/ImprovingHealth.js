@@ -60,7 +60,7 @@ const ImprovingHealth = () => {
         >
           <ImprovingHealthCard
             title="BEST MEDITATION"
-            subtitle="Reduce stress and be more mindful with soothing video meditations."
+            subtitle="Reduce stress and be more mindful."
             icon={IconMeditation}
             pic={BestMeditationPic}
           />
