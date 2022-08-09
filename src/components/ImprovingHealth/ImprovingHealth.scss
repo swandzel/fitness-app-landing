@@ -1,15 +1,8 @@
+@import "../../base";
+
 .improving-health {
   margin-bottom: 150px;
-  max-width: 1640px;
-  margin: auto;
-
-  @media (max-width: 1640px) {
-    margin: 0 50px;
-  }
-
-  @media (max-width: 500px) {
-    margin: 0 20px;
-  }
+  @include container;
 
   &--cards {
     display: flex;

@@ -7,7 +7,6 @@ const VarietyWorkouts = () => {
   return (
     <div className="variety-workouts">
       <div className="block" />
-
       <motion.img
         variants={h2Animation}
         initial="offscreen"

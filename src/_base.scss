@@ -3,3 +3,16 @@ $blue: #1d61d6;
 $black: #000000;
 $grey: #706a6a;
 $overlay: #7171716e;
+
+@mixin container {
+  max-width: 1640px;
+  margin: auto;
+
+  @media (max-width: 1640px) {
+    margin: 0 50px;
+  }
+
+  @media (max-width: 500px) {
+    margin: 0 20px;
+  }
+}

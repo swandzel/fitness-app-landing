@@ -13,7 +13,7 @@
     position: absolute;
     top: 250px;
 
-    @media (max-width: 900px) {
+    @media (max-width: 768px) {
       display: none;
     }
   }
@@ -23,8 +23,8 @@
     background: linear-gradient(
       101deg,
       rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 1) 20%,
-      rgba(255, 255, 255, 0.8) 50%,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0.8) 20%,
       rgba(34, 155, 248, 0) 100%
     );
   }
@@ -34,8 +34,8 @@
     background: linear-gradient(
       254deg,
       rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 1) 20%,
-      rgba(255, 255, 255, 1) 50%,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0.8) 20%,
       rgba(34, 155, 248, 0) 100%
     );
     right: 0;
@@ -51,7 +51,6 @@
   .slide {
     padding-top: 50px;
     height: 500px;
-    // min-width: auto;
   }
 
   li.dot {

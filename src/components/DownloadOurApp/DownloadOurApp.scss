@@ -16,12 +16,7 @@
     flex-direction: row;
     align-items: center;
     height: 990px;
-    max-width: 1640px;
-    margin: auto;
-
-    @media (max-width: 1640px) {
-      margin: 0 50px;
-    }
+    @include container;
 
     @media (max-width: 900px) {
       flex-direction: column;
@@ -31,7 +26,6 @@
 
     @media (max-width: 500px) {
       height: 700px;
-      margin: 0 20px;
     }
   }
 

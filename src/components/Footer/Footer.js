@@ -1,12 +1,14 @@
 import "./Footer.scss";
 import Logo from "../../assets/icons/dumbbell-white.svg";
+import { scrollToTop } from "../../utils/scrollToTop";
+import { footerLinks, footerSocials } from "../../utils/footerLinks";
 
 const Footer = () => {
   return (
     <div className="footer">
       <div className="footer--content">
         <div className="footer--left">
-          <div className="footer--logo">
+          <div className="footer--logo" onClick={scrollToTop}>
             <img src={Logo} alt="Logo" />
             <span className="footer--logo-bold">NEXT</span>
             <span className="footer--logo--fitness-app">&nbsp;FITNESS APP</span>
@@ -18,29 +20,24 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer--right">
+          {footerLinks.map((footerLink) => (
+            <div className="footer--right--links" key={footerLink.id}>
+              <h3>{footerLink.categoryName}</h3>
+              <ul>
+                {footerLink.links.map((link, index) => (
+                  <li key={index}>{link}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
           <div className="footer--right--links">
-            <h3>Resources</h3>
-            <ul>
-              <li>Help Center</li>
-              <li>Terms of Service</li>
-              <li>Privacy</li>
-              <li>Wall of Love</li>
-              <li>Contact Us</li>
-            </ul>
-          </div>
-          <div className="footer--right--links">
-            <h3>Download</h3>
-            <ul>
-              <li>App Store</li>
-              <li>Google Play</li>
-            </ul>
-          </div>
-          <div className="footer--right--links">
-            <h3>Follow Us</h3>
-            <ul>
-              <li>FB</li>
-              <li>IG</li>
-              <li>PINT</li>
+            <h3>{footerSocials.categoryName}</h3>
+            <ul className="footer--right--socials">
+              {footerSocials.links.map((link, index) => (
+                <li key={index}>
+                  <img src={link} />
+                </li>
+              ))}
             </ul>
           </div>
         </div>

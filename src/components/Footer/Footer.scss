@@ -19,6 +19,7 @@
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     margin-bottom: 65px;
+    cursor: pointer;
 
     img {
       margin-right: 20px;
@@ -50,13 +51,8 @@
     justify-content: space-between;
     align-items: flex-start;
     padding-top: 50px;
-    max-width: 1640px;
     font-size: 20px;
-    margin: 0 auto;
-
-    @media (max-width: 1640px) {
-      margin: 0 50px;
-    }
+    @include container;
 
     @media (max-width: 1200px) {
       font-size: 16px;
@@ -64,10 +60,6 @@
 
     @media (max-width: 768px) {
       flex-direction: column;
-    }
-
-    @media (max-width: 500px) {
-      margin: 0 20px;
     }
   }
 
@@ -98,6 +90,16 @@
 
     li {
       list-style: none;
+    }
+
+    &--socials {
+      display: flex;
+      align-items: center;
+
+      img {
+        margin-right: 10px;
+        cursor: pointer;
+      }
     }
   }
 }

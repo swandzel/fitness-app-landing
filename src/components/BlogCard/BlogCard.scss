@@ -3,7 +3,6 @@
 .blog-card {
   display: flex;
   flex-direction: column;
-  // max-width: 510px;
   width: 30%;
   min-height: 770px;
   border-radius: 50px;
@@ -27,6 +26,10 @@
     &:last-child {
       display: flex;
     }
+  }
+
+  img {
+    border-radius: 50px 50px 0 0;
   }
 
   &--title {

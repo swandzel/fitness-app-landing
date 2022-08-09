@@ -5,15 +5,17 @@ import { Carousel } from "react-responsive-carousel";
 import { motion } from "framer-motion";
 import { h2Animation, cardItem } from "../../utils/animations";
 import { useEffect, useState } from "react";
+import { testimonials } from "../../utils/testimonials";
 
 const Testimonials = () => {
   const [size, setSize] = useState(0);
   const [testimonialsCount, setTestimonialsCount] = useState(0);
 
+  const updateSize = () => {
+    setSize(window.innerWidth);
+  };
+
   useEffect(() => {
-    function updateSize() {
-      setSize(window.innerWidth);
-    }
     window.addEventListener("resize", updateSize);
     updateSize();
 
@@ -59,12 +61,16 @@ const Testimonials = () => {
           showThumbs={false}
           showArrows={false}
         >
-          <TestimonialsItem />
-          <TestimonialsItem />
-          <TestimonialsItem />
+          {testimonials.map((testimonial) => (
+            <TestimonialsItem
+              key={testimonial.id}
+              starCount={testimonial.starCount}
+              text={testimonial.text}
+              author={testimonial.author}
+            />
+          ))}
         </Carousel>
       </motion.div>
-
       <div className="testimonials--mask-left"></div>
       <div className="testimonials--mask-right"></div>
     </div>

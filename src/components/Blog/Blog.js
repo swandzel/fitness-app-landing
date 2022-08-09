@@ -2,6 +2,7 @@ import "./Blog.scss";
 import BlogCard from "../BlogCard/BlogCard";
 import { motion } from "framer-motion";
 import { h2Animation } from "../../utils/animations";
+import { blogPosts } from "../../utils/blogPosts";
 
 const Blog = () => {
   return (
@@ -16,9 +17,14 @@ const Blog = () => {
         Check our NEXT blog
       </motion.h2>
       <div className="blog--posts">
-        <BlogCard />
-        <BlogCard />
-        <BlogCard />
+        {blogPosts.map((blogPost) => (
+          <BlogCard
+            key={blogPost.id}
+            title={blogPost.title}
+            text={blogPost.text}
+            image={blogPost.image}
+          />
+        ))}
       </div>
     </div>
   );

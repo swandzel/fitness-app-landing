@@ -3,15 +3,9 @@ import Button from "./../Button/Button";
 import Logo from "../../assets/icons/dumbbell.svg";
 import { motion } from "framer-motion";
 import { navAnim } from "../../utils/animations";
+import { scrollToTop } from "../../utils/scrollToTop";
 
 const Navbar = ({ toggleModal }) => {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-    });
-  };
-
   return (
     <motion.nav
       initial="initial"

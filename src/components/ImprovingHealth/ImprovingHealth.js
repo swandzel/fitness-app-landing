@@ -1,13 +1,8 @@
 import "./ImprovingHealth.scss";
 import ImprovingHealthCard from "../ImprovingHealthCard/ImprovingHealthCard";
-import IconWorkouts from "../../assets/icons/card-dumbbell.svg";
-import IconTrainers from "../../assets/icons/card-trainers.svg";
-import IconMeditation from "../../assets/icons/card-meditation.svg";
-import BestWorkoutsPic from "../../assets/images/card-best-workouts.jpg";
-import BestTrainersPic from "../../assets/images/card-best-trainers.jpg";
-import BestMeditationPic from "../../assets/images/card-best-meditation.jpg";
 import { motion } from "framer-motion";
 import { h2Animation, cardContainer, cardItem } from "../../utils/animations";
+import { improvingHealthCards } from "../../utils/improvingHealthCards";
 
 const ImprovingHealth = () => {
   return (
@@ -32,39 +27,20 @@ const ImprovingHealth = () => {
         viewport={{ once: true, amount: 0.1 }}
         className="improving-health--cards"
       >
-        <motion.div
-          variants={cardItem}
-          className="improving-health--cards--item"
-        >
-          <ImprovingHealthCard
-            title="BEST WORKOUTS"
-            subtitle="Train your mind and body with personalized fitness plans."
-            icon={IconWorkouts}
-            pic={BestWorkoutsPic}
-          />
-        </motion.div>
-        <motion.div
-          variants={cardItem}
-          className="improving-health--cards--item"
-        >
-          <ImprovingHealthCard
-            title="BEST TRAINERS"
-            subtitle="Work out with celebrities and world-class trainers."
-            icon={IconTrainers}
-            pic={BestTrainersPic}
-          />
-        </motion.div>
-        <motion.div
-          variants={cardItem}
-          className="improving-health--cards--item"
-        >
-          <ImprovingHealthCard
-            title="BEST MEDITATION"
-            subtitle="Reduce stress and be more mindful."
-            icon={IconMeditation}
-            pic={BestMeditationPic}
-          />
-        </motion.div>
+        {improvingHealthCards.map((improvingHealthCard) => (
+          <motion.div
+            variants={cardItem}
+            className="improving-health--cards--item"
+            key={improvingHealthCard.id}
+          >
+            <ImprovingHealthCard
+              title={improvingHealthCard.title}
+              subtitle={improvingHealthCard.subtitle}
+              icon={improvingHealthCard.icon}
+              pic={improvingHealthCard.pic}
+            />
+          </motion.div>
+        ))}
       </motion.div>
     </div>
   );

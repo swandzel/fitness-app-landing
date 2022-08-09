@@ -32,7 +32,7 @@ const ConnectingWith = () => {
         whileInView="animate"
         viewport={{ once: true, amount: 0.5 }}
         src={ConnectingImg}
-        alt=""
+        alt="Connecting with like-minded people"
         className="connecting-with--photo"
       />
     </div>
