@@ -17,9 +17,12 @@
     padding: 0 50px;
   }
 
+  @media (max-width: 768px) {
+    margin: 100px auto;
+  }
+
   @media (max-width: 500px) {
     padding: 0 20px;
-    margin: 100px auto;
   }
 
   &--text,
@@ -50,6 +53,10 @@
 
       @media (max-width: 1200px) {
         text-align: center !important;
+      }
+
+      @media (max-width: 500px) {
+        padding-bottom: 16px;
       }
     }
   }

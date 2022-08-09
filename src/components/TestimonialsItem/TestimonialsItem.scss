@@ -3,8 +3,9 @@
 .testimonials-item {
   display: flex;
   flex-direction: column;
-  width: 720px;
-  height: 365px;
+  // width: 720px;
+  min-height: 365px;
+  min-width: 330px;
   background-color: $white;
   border-radius: 36px;
   margin: 0 15px;
@@ -17,6 +18,11 @@
     font-size: 32px;
     color: $grey;
     text-align: left;
+    margin-bottom: 16px;
+
+    @media (max-width: 1100px) {
+      font-size: 24px;
+    }
   }
 
   &--stars {

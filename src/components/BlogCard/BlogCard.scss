@@ -33,6 +33,10 @@
     font-size: 40px;
     font-weight: 700;
     padding: 23px 23px 10px 23px;
+
+    @media (max-width: 500px) {
+      font-size: 30px;
+    }
   }
 
   &--text {

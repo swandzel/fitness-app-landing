@@ -24,6 +24,10 @@
       flex-direction: column;
     }
 
+    @media (max-width: 500px) {
+      margin-top: 50px;
+    }
+
     &--item {
       width: 32%;
       min-width: 300px;

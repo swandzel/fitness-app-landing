@@ -28,7 +28,7 @@ const App = () => {
       <ConnectingWith />
       <DownloadOurApp />
       <Blog />
-      {/* <Testimonials /> */}
+      <Testimonials />
       <Footer />
     </div>
   );
