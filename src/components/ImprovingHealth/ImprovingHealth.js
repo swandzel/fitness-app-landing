@@ -14,7 +14,8 @@ const ImprovingHealth = () => {
         whileInView="onscreen"
         viewport={{ once: true, amount: 0.1 }}
       >
-        Improving Health & Fitness with NEXT
+        Improving Health & Fitness with NE
+        <span className="navbar--logo-blue">X</span>T
       </motion.h2>
       <p>
         Join 10+ million members on the top digital fitness platform and stay

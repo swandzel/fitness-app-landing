@@ -10,9 +10,12 @@ const Navbar = ({ toggleModal }) => {
   const [changeStyle, setChangeStyle] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    const changeStyleHandler = () => {
       setChangeStyle(window.pageYOffset > 100);
-    });
+    };
+
+    window.addEventListener("scroll", changeStyleHandler);
+    return () => window.removeEventListener("scroll", changeStyleHandler);
   }, []);
 
   return (
@@ -30,7 +33,13 @@ const Navbar = ({ toggleModal }) => {
           }`}
           onClick={scrollToTop}
         >
-          <img src={Logo} alt="Logo" />
+          <img
+            src={Logo}
+            alt="Logo"
+            className={`navbar--img ${
+              changeStyle ? "navbar--img--scroll" : ""
+            }`}
+          />
           <span className="navbar--logo-bold">
             NE<span className="navbar--logo-blue">X</span>T
           </span>

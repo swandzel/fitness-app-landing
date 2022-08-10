@@ -25,10 +25,11 @@ const VarietyWorkouts = () => {
         Explore all the variety of workouts!
       </motion.h2>
       <p>
-        NEXT encourages you to get stronger week by week! You progress
-        gradually, increasing the intensity in each workout. When you’re ready
-        to take on fresh challenges and step up your workouts, NEXT has you
-        covered.
+        NE<span className="navbar--logo-blue">X</span>T encourages you to get
+        stronger week by week! You progress gradually, increasing the intensity
+        in each workout. When you’re ready to take on fresh challenges and step
+        up your workouts, NE<span className="navbar--logo-blue">X</span>T has
+        you covered.
       </p>
     </div>
   );

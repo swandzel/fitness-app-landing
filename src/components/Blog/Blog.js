@@ -14,7 +14,7 @@ const Blog = () => {
         whileInView="onscreen"
         viewport={{ once: true, amount: 0.1 }}
       >
-        Check our NEXT blog
+        Check our NE<span className="navbar--logo-blue">X</span>T blog
       </motion.h2>
       <div className="blog--posts">
         {blogPosts.map((blogPost) => (

@@ -11,11 +11,11 @@ const Testimonials = () => {
   const [size, setSize] = useState(0);
   const [testimonialsCount, setTestimonialsCount] = useState(0);
 
-  const updateSize = () => {
-    setSize(window.innerWidth);
-  };
-
   useEffect(() => {
+    const updateSize = () => {
+      setSize(window.innerWidth);
+    };
+
     window.addEventListener("resize", updateSize);
     updateSize();
 
