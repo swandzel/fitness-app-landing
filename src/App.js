@@ -9,11 +9,10 @@ import Blog from "./components/Blog/Blog";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Footer from "./components/Footer/Footer";
 import { useState } from "react";
+import Modal from "./components/Modal/Modal";
 
 const App = () => {
   const [showModal, setShowModal] = useState(false);
-
-  console.log(showModal);
 
   const toggleModal = () => {
     setShowModal(!showModal);
@@ -22,14 +21,17 @@ const App = () => {
   return (
     <div className="app">
       <Navbar toggleModal={toggleModal} />
-      <Header />
+      <Header toggleModal={toggleModal} />
       <ImprovingHealth />
       <VarietyWorkouts />
-      <ConnectingWith />
+      <ConnectingWith toggleModal={toggleModal} />
       <DownloadOurApp />
       <Blog />
       <Testimonials />
       <Footer />
+      {showModal && (
+        <Modal toggleModal={toggleModal} setShowModal={setShowModal} />
+      )}
     </div>
   );
 };

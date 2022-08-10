@@ -1,7 +1,7 @@
 import "./Header.scss";
 import Button from "../Button/Button";
 
-const Header = () => {
+const Header = ({ toggleModal }) => {
   return (
     <header className="header">
       <div className="header--layer">
@@ -13,7 +13,7 @@ const Header = () => {
             Unlimited access to the world’s best workouts from celebrity
             trainers
           </p>
-          <Button text="Try it for free" />
+          <Button onClick={toggleModal} text="Try it for free" />
         </div>
       </div>
     </header>

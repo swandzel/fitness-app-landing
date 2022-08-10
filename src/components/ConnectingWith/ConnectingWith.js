@@ -4,7 +4,7 @@ import ConnectingImg from "../../assets/images/connecting.jpg";
 import { motion } from "framer-motion";
 import { h2Animation, picAnim } from "../../utils/animations";
 
-const ConnectingWith = () => {
+const ConnectingWith = ({ toggleModal }) => {
   return (
     <div className="connecting-with">
       <div className="connecting-with--text">
@@ -25,7 +25,7 @@ const ConnectingWith = () => {
           To share your experiences and aspirations. To support and motivate
           each other. To embrace you journey and shape your best life.
         </p>
-        <Button text="Go to forum" />
+        <Button onClick={toggleModal} text="Go to forum" />
       </div>
       <motion.img
         initial="initial"

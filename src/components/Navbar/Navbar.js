@@ -59,7 +59,11 @@ const Navbar = ({ toggleModal }) => {
             <li className="navbar--link">
               <a href="#testimonials">Testimonials</a>
             </li>
-            <li onClick={() => toggleModal()} className="navbar--link">
+            <li
+              onClick={toggleModal}
+              className="navbar--link"
+              style={{ cursor: "pointer" }}
+            >
               Login
             </li>
           </ul>
