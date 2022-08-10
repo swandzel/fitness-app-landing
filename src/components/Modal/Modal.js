@@ -54,7 +54,7 @@ const Modal = ({ toggleModal, setShowModal }) => {
               className="modal--close"
             />
           </div>
-          <img src={SadFaceIcon} alt="Error" />
+          <img src={SadFaceIcon} alt="Error" className="modal--error" />
           <div className="modal--text">Oh no, it doesn't work</div>
           <Button text="Close" onClick={toggleModal} />
         </div>
