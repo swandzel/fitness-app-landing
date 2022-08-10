@@ -32,7 +32,7 @@ const Modal = ({ toggleModal, setShowModal }) => {
       >
         <div className="modal--container">
           <div className="modal--navbar">
-            <div className="navbar--logo">
+            <div className="navbar--logo" style={{ cursor: "auto" }}>
               <img
                 src={Logo}
                 alt="Logo"

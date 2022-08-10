@@ -7,6 +7,7 @@
   align-items: center;
   background-color: $overlay;
   width: 100%;
+  min-width: 330px;
   height: 100%;
   top: 0;
   left: 0;
@@ -21,6 +22,10 @@
     width: 768px;
     border-radius: 48px;
     height: 630px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
 
   &--navbar {
@@ -36,6 +41,12 @@
     font-family: "Poppins", sans-serif;
     font-size: 40px;
     margin-bottom: 40px;
+    text-align: center;
+
+    @media (max-width: 500px) {
+      font-size: 35px;
+      margin-bottom: 20px;
+    }
   }
 
   &--close {
