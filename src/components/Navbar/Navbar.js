@@ -4,18 +4,32 @@ import Logo from "../../assets/icons/dumbbell.svg";
 import { motion } from "framer-motion";
 import { navAnim } from "../../utils/animations";
 import { scrollToTop } from "../../utils/scrollToTop";
+import { useState, useEffect } from "react";
 
 const Navbar = ({ toggleModal }) => {
+  const [changeStyle, setChangeStyle] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setChangeStyle(window.pageYOffset > 100);
+    });
+  }, []);
+
   return (
     <motion.nav
       initial="initial"
       animate="animate"
       variants={navAnim}
       transition={{ duration: 0.5 }}
-      className="navbar"
+      className={`navbar ${changeStyle ? "navbar--scroll" : ""}`}
     >
       <div className="navbar--container">
-        <div className="navbar--logo" onClick={scrollToTop}>
+        <div
+          className={`navbar--logo ${
+            changeStyle ? "navbar--logo--scroll" : ""
+          }`}
+          onClick={scrollToTop}
+        >
           <img src={Logo} alt="Logo" />
           <span className="navbar--logo-bold">
             NE<span className="navbar--logo-blue">X</span>T

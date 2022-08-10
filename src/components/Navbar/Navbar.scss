@@ -7,6 +7,14 @@
   font-weight: 300;
   background-color: $white;
   z-index: 10;
+  transition: all 0.3s ease;
+
+  &--scroll {
+    height: 80px;
+    -webkit-box-shadow: 0px 18px 35px 13px rgba(157, 157, 157, 0.2);
+    -moz-box-shadow: 0px 18px 35px 13px rgba(157, 157, 157, 0.2);
+    box-shadow: 0px 18px 35px 13px rgba(157, 157, 157, 0.2);
+  }
 
   &--container {
     display: flex;
@@ -29,6 +37,11 @@
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     cursor: pointer;
+    transition: all 0.3s ease;
+
+    &--scroll {
+      font-size: 35px;
+    }
 
     &--fitness-app {
       @media (max-width: 1300px) {
