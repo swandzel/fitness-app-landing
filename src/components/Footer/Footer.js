@@ -35,7 +35,7 @@ const Footer = () => {
             <ul className="footer--right--socials">
               {footerSocials.links.map((link, index) => (
                 <li key={index}>
-                  <img src={link} />
+                  <img src={link} alt="Follow us" />
                 </li>
               ))}
             </ul>

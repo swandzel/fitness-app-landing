@@ -17,7 +17,7 @@ const Modal = ({ toggleModal, setShowModal }) => {
   useEffect(() => {
     window.addEventListener("keydown", closeModal);
     return () => window.removeEventListener("keydown", closeModal);
-  }, []);
+  });
 
   return (
     <AnimatePresence>
