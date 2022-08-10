@@ -17,9 +17,12 @@ const ConnectingWith = ({ toggleModal }) => {
           Connecting with like-minded people
         </motion.h2>
         <p>
-          The NE<span className="navbar--logo-blue">X</span>T forum is a place
-          where you can connect with women who are focused on their health and
-          fitness.
+          The
+          <b>
+            &nbsp;NE<span className="navbar--logo-blue">X</span>T&nbsp;
+          </b>
+          forum is a place where you can connect with women who are focused on
+          their health and fitness.
         </p>
         <p>
           To share your experiences and aspirations. To support and motivate

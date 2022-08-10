@@ -1,5 +1,9 @@
+@import "../../base";
+
 .button {
-  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: $white;
   border: 0px;
   border-radius: 50px;
   background: rgb(29, 49, 208);
@@ -8,8 +12,6 @@
     rgba(29, 49, 208, 1) 0%,
     rgba(34, 155, 248, 1) 100%
   );
-  font-weight: 700;
-  font-family: "Poppins", sans-serif;
   cursor: pointer;
 
   &--small {

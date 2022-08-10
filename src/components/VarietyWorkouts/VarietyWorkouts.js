@@ -25,11 +25,16 @@ const VarietyWorkouts = () => {
         Explore all the variety of workouts!
       </motion.h2>
       <p>
-        NE<span className="navbar--logo-blue">X</span>T encourages you to get
-        stronger week by week! You progress gradually, increasing the intensity
-        in each workout. When you’re ready to take on fresh challenges and step
-        up your workouts, NE<span className="navbar--logo-blue">X</span>T has
-        you covered.
+        <b>
+          NE<span className="navbar--logo-blue">X</span>T&nbsp;
+        </b>
+        encourages you to get stronger week by week! You progress gradually,
+        increasing the intensity in each workout. When you’re ready to take on
+        fresh challenges and step up your workouts,
+        <b>
+          &nbsp;NE<span className="navbar--logo-blue">X</span>T&nbsp;
+        </b>
+        has you covered.
       </p>
     </div>
   );
