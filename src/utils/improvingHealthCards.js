@@ -8,20 +8,20 @@ export const improvingHealthCards = [
     title: "BEST WORKOUTS",
     subtitle: "Train your mind and body with personalized fitness plans.",
     icon: BestWorkoutsIcon,
-    pic: require("../assets/images/card-best-workouts.jpg"),
+    pic: require("../assets/images/card-best-workouts.webp"),
   },
   {
     id: 2,
     title: "BEST TRAINERS",
     subtitle: "Work out with celebrities and world-class trainers.",
     icon: BestTrainersIcon,
-    pic: require("../assets/images/card-best-trainers.jpg"),
+    pic: require("../assets/images/card-best-trainers.webp"),
   },
   {
     id: 3,
     title: "BEST MEDITATION",
     subtitle: "Reduce stress and be more mindful.",
     icon: BestMeditationIcon,
-    pic: require("../assets/images/card-best-meditation.jpg"),
+    pic: require("../assets/images/card-best-meditation.webp"),
   },
 ];

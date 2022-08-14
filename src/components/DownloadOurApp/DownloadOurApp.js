@@ -1,6 +1,6 @@
 import "./DownloadOurApp.scss";
-import OurAppPic from "../../assets/images/our-app.png";
-import AppStoreIcon from "../../assets/images/app-store-icon.png";
+import OurAppPic from "../../assets/images/our-app.webp";
+import AppStoreIcon from "../../assets/images/app-store-icon.webp";
 import { motion } from "framer-motion";
 import { picAnim } from "../../utils/animations";
 

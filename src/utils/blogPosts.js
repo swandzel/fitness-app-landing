@@ -11,7 +11,7 @@ ullamcorper libero odio et sapien. Nam a nulla dolor. Nunc justo urna,
 finibus quis rhoncus sit amet, convallis in turpis. Suspendisse in
 iaculis nunc. Sed posuere urna dictum lacus commodo feugiat. Integer
 vestibulum, dolor sit amet mollis aliquet`,
-    image: require("../assets/images/posts/running.jpg"),
+    image: require("../assets/images/posts/running.webp"),
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ ullamcorper libero odio et sapien. Nam a nulla dolor. Nunc justo urna,
 finibus quis rhoncus sit amet, convallis in turpis. Suspendisse in
 iaculis nunc. Sed posuere urna dictum lacus commodo feugiat. Integer
 vestibulum, dolor sit amet mollis aliquet`,
-    image: require("../assets/images/posts/build-muscle.jpg"),
+    image: require("../assets/images/posts/build-muscle.webp"),
   },
   {
     id: 3,
@@ -39,6 +39,6 @@ ullamcorper libero odio et sapien. Nam a nulla dolor. Nunc justo urna,
 finibus quis rhoncus sit amet, convallis in turpis. Suspendisse in
 iaculis nunc. Sed posuere urna dictum lacus commodo feugiat. Integer
 vestibulum, dolor sit amet mollis aliquet`,
-    image: require("../assets/images/posts/how-bulk.jpg"),
+    image: require("../assets/images/posts/how-bulk.webp"),
   },
 ];

@@ -1,6 +1,6 @@
 import "./ConnectingWith.scss";
 import Button from "../Button/Button";
-import ConnectingImg from "../../assets/images/connecting.jpg";
+import ConnectingImg from "../../assets/images/connecting.webp";
 import { motion } from "framer-motion";
 import { h2Animation, picAnim } from "../../utils/animations";
 

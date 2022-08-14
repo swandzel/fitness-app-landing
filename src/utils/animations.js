@@ -1,6 +1,6 @@
 export const h2Animation = {
   offscreen: {
-    y: 200,
+    y: 150,
     opacity: 0,
   },
   onscreen: {
