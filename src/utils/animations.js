@@ -14,30 +14,16 @@ export const h2Animation = {
   },
 };
 
-export const headerPic = {
-  offscreen: {
-    y: 200,
-    opacity: 0,
-  },
-  onscreen: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      duration: 1,
-    },
-  },
-};
-
 export const headerText = {
   offscreen: {
-    y: -400,
+    y: -100,
     opacity: 0,
   },
   onscreen: {
     y: 0,
     opacity: 1,
     transition: {
-      duration: 1,
+      duration: 0.5,
     },
   },
 };

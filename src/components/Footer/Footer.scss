@@ -23,6 +23,11 @@
 
     img {
       margin-right: 20px;
+      height: 31.5px;
+
+      @media (max-width: 1000px) {
+        margin-right: 10px;
+      }
     }
 
     &-bold {
@@ -98,6 +103,7 @@
 
       img {
         margin-right: 10px;
+        height: 40px;
         cursor: pointer;
       }
     }

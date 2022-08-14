@@ -31,6 +31,8 @@
   img {
     border-radius: 50px 50px 0 0;
     height: 267px;
+    width: 100%;
+    object-fit: cover;
   }
 
   &--title {

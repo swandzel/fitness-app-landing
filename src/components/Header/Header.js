@@ -1,15 +1,15 @@
 import "./Header.scss";
 import Button from "../Button/Button";
 import { motion } from "framer-motion";
-import { headerPic, headerText } from "../../utils/animations";
+import { picAnim, headerText } from "../../utils/animations";
 import ArrowRight from "../../assets/icons/arrow-right.svg";
 
 const Header = ({ toggleModal }) => {
   return (
     <motion.header
-      initial="offscreen"
-      animate="onscreen"
-      variants={headerPic}
+      initial="initial"
+      animate="animate"
+      variants={picAnim}
       className="header"
     >
       <div className="header--layer">
