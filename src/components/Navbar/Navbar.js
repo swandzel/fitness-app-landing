@@ -59,12 +59,8 @@ const Navbar = ({ toggleModal }) => {
             <li className="navbar--link">
               <a href="#testimonials">Testimonials</a>
             </li>
-            <li
-              onClick={toggleModal}
-              className="navbar--link"
-              style={{ cursor: "pointer" }}
-            >
-              Login
+            <li className="navbar--link" style={{ cursor: "pointer" }}>
+              <button onClick={toggleModal}>Login</button>
             </li>
           </ul>
           <Button onClick={toggleModal} text="SIGNUP" type="small" />

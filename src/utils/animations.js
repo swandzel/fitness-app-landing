@@ -14,6 +14,34 @@ export const h2Animation = {
   },
 };
 
+export const headerPic = {
+  offscreen: {
+    y: 200,
+    opacity: 0,
+  },
+  onscreen: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+    },
+  },
+};
+
+export const headerText = {
+  offscreen: {
+    y: -400,
+    opacity: 0,
+  },
+  onscreen: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+    },
+  },
+};
+
 export const cardContainer = {
   show: {
     transition: {
@@ -37,4 +65,9 @@ export const navAnim = {
 export const picAnim = {
   initial: { opacity: 0 },
   animate: { opacity: 1 },
+};
+
+export const arrowAnim = {
+  rest: { opacity: 1, x: 0 },
+  hover: { opacity: 1, x: 5 },
 };

@@ -1,6 +1,9 @@
 @import "../../base";
 
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   color: $white;
@@ -13,6 +16,7 @@
     rgba(34, 155, 248, 1) 100%
   );
   cursor: pointer;
+  color: $white !important;
 
   &--small {
     height: 50px;
@@ -32,6 +36,14 @@
       font-size: 20px;
       padding: 0;
       width: 275px;
+    }
+  }
+
+  img {
+    margin-left: 15px;
+
+    @media (max-width: 550px) {
+      display: none;
     }
   }
 }

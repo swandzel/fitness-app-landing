@@ -47,7 +47,8 @@ const Modal = ({ toggleModal, setShowModal }) => {
                 &nbsp;FITNESS APP
               </span>
             </div>
-            <img
+            <motion.img
+              whileTap={{ scale: 0.9 }}
               src={CloseIcon}
               alt="Close"
               onClick={toggleModal}

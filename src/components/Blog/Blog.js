@@ -16,7 +16,7 @@ const Blog = () => {
       >
         Check our NE<span className="navbar--logo-blue">X</span>T blog
       </motion.h2>
-      <div className="blog--posts">
+      <motion.div className="blog--posts">
         {blogPosts.map((blogPost) => (
           <BlogCard
             key={blogPost.id}
@@ -25,7 +25,7 @@ const Blog = () => {
             image={blogPost.image}
           />
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };
