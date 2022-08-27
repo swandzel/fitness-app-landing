@@ -10,6 +10,7 @@ const Header = ({ toggleModal }) => {
       initial="initial"
       animate="animate"
       variants={picAnim}
+      transition={{ delay: 0.5 }}
       className="header"
     >
       <div className="header--layer">
