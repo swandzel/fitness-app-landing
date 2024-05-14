@@ -7,10 +7,10 @@ import { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cardItem } from "../../utils/animations";
 
-const Modal = ({ toggleModal, setShowModal }) => {
+const Modal = ({ toggleModal }) => {
   const closeModal = (e) => {
     if (e.target.id === "modal" || e.key === "Escape") {
-      setShowModal(false);
+      toggleModal()
     }
   };
 

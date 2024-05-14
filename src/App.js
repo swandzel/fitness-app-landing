@@ -30,7 +30,7 @@ const App = () => {
       <Testimonials />
       <Footer />
       {showModal && (
-        <Modal toggleModal={toggleModal} setShowModal={setShowModal} />
+        <Modal toggleModal={toggleModal} />
       )}
     </div>
   );
